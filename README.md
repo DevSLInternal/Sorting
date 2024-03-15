@@ -4,45 +4,47 @@ Welcome to Sorting Visualizer! I built this application because I was fascinated
 Here's a simple flow chart:
 ```mermaid
 sequenceDiagram
+    participant Anshul
     participant Arpit
     participant Satwik
-    participant Anshul
     participant Raj
     participant Shruti
 
-    Browser->>Server: HTTP request for https://studies.cs.helsinki.fi/exampleapp/spa
-    activate Server
+    Anshul->>Arpit:First validated the idea by doing a low level implementation (Proof of concept) of the components involved in the project.
+    activate Arpit
     
-    Server-->>Browser: SPA files (HTML, CSS, JS) are served
-    deactivate Server
+    Arpit->>Satwik:Created the website's UI
+    activate Satwik
+    deactivate Arpit
     
-    Browser->>SPA: Browser receives SPA files
-    activate SPA
+    Satwik->>Raj:Improved UI using CSS
+    activate Raj
+    deactivate Satwik
     
-    SPA-->>Browser: SPA initializes and renders
-    deactivate SPA
+    Raj->>Shruti:Created Bars Using JavaScript
+    activate Shruti
+    deactivate Raj
     
-    Browser->>Server: AJAX requests for initial data/resources
-    activate Server
+    Shruti->>Anshul:Implemented Bubble Sort Algorithm
+    activate Anshul
+    deactivate Shruti
     
-    Server->>SPA: Initial data/resources are served
-    deactivate Server
-    activate SPA
+    Anshul->>Arpit:Implementation of remaining Sorting function
+    activate Arpit
+    deactivate Anshul
     
-    SPA-->>Browser: User creates a new note
-    deactivate SPA
-    Note right of SPA: Note creation action triggers an AJAX request
+    Arpit->>Satwik:Changing the number of bars and speed
+    activate Satwik
+    deactivate Arpit
     
-    Browser->>Server: AJAX request to create a new note
-    activate Server
+    Satwik->>Raj: Host your website live
+    deactivate Satwik
+    activate Raj
     
-    Server-->>Browser: Confirmation of successful note creation
-    deactivate Server
+    Raj->>Shruti: Created a navigation bar for changing various sort
+    deactivate Raj 
+    activate Shruti
     
-    Browser->>SPA: SPA updates interface to display new note
-    activate SPA
-    
-    SPA-->>Browser: Executed the excercise:New note in Single page app diagram
-    deactivate SPA
-    Note right of Browser: Exercise 0.6
+    Shruti->>Anshul:Collected the data for fetching our output
+    deactivate Shruti
 ```
