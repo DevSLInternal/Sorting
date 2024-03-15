@@ -1,6 +1,19 @@
 # Sorting Visualizer
 
 Welcome to Sorting Visualizer! I built this application because I was fascinated by sorting algorithms, and I wanted to visualize them in action. I hope that you enjoy playing around with this visualization tool just as much as I enjoyed building it. You can access it here (use Google Chrome!): https://clementmihailescu.github.io/Sorting-Visualizer/
+
+Greetings,Everyone!!!
+
+This is a repository we are creating for introduction. However,we can further edit this readme file whenever we find a need.
+
+Our team members are as follows:
+Name                Roll No.     Batch
+Arpit S. Agrawal    22           A2
+Anshul L. Jadhao    21           A2
+Raj V. Khatri       45           A3
+Satwik Shirpurwar   52           A3
+Shruti Tiwari       11           A1
+
 Here's a simple flow chart:
 ```mermaid
 sequenceDiagram
